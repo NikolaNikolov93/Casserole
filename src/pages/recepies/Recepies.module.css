@@ -1,0 +1,32 @@
+.container {
+  padding: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recepie {
+  flex: 0 1 25%;
+  color: black;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.recepie-info {
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgba(245, 245, 220, 0.5);
+}
+.recepie-info fieldset {
+  padding: 1em;
+}
+.recepie-info legend {
+  color: darkslategray;
+}

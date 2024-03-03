@@ -1,0 +1,6 @@
+.site {
+  max-width: 1440px;
+  display: flex;
+  color: inherit;
+  margin-bottom: 1em;
+}
