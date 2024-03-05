@@ -1,6 +1,6 @@
 .site {
   max-width: 1440px;
-  display: flex;
+  padding: 1em;
   color: inherit;
-  margin-bottom: 1em;
+  margin: 0 auto;
 }

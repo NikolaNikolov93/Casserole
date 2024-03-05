@@ -1,9 +1,7 @@
 .container {
-  background-image: url("/images/chinh-le-duc-vuDXJ60mJOA-unsplash.jpg");
+  background-image: url("/images/homePageImages/chinh-le-duc-vuDXJ60mJOA-unsplash.jpg");
   background-position: center;
   background-size: cover;
-  height: 50vh;
-  width: 100vw;
   text-align: center;
 }
 .container h1 {

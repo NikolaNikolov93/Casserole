@@ -20,25 +20,32 @@ const Navbar = () => {
           <input className={styles["site-nav-search"]} type="text"></input>
           <HiOutlineSearch className={styles["search-icon"]} />
         </div>
-        <ul>
-          <CustomLink to="/register">
-            <IoCreateOutline className={styles["link-icon"]} /> Register
-          </CustomLink>
-          <CustomLink to="/login">
-            <IoLogInOutline className={styles["link-icon"]} /> Login
-          </CustomLink>
-          <CustomLink to="/logut">
-            <CiLogout className={styles["link-icon"]} /> Logout
-          </CustomLink>
-          <CustomLink to="/recepies">
-            <GiCook className={styles["link-icon"]} /> Recepies
-          </CustomLink>
+        <div className={styles["links-container"]}>
+          <div className={styles["hamburger"]}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <CustomLink to="/register">
+              <IoCreateOutline className={styles["link-icon"]} /> Register
+            </CustomLink>
+            <CustomLink to="/login">
+              <IoLogInOutline className={styles["link-icon"]} /> Login
+            </CustomLink>
+            <CustomLink to="/logut">
+              <CiLogout className={styles["link-icon"]} /> Logout
+            </CustomLink>
+            <CustomLink to="/recepies">
+              <GiCook className={styles["link-icon"]} /> Recepies
+            </CustomLink>
 
-          <CustomLink to="/about">
-            <IoInformationCircleOutline className={styles["link-icon"]} />
-            About
-          </CustomLink>
-        </ul>
+            <CustomLink to="/about">
+              <IoInformationCircleOutline className={styles["link-icon"]} />
+              About
+            </CustomLink>
+          </ul>
+        </div>
       </nav>
     </div>
   );

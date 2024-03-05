@@ -7,6 +7,22 @@ import About from "./pages/About";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  // /**
+  //  * Toggle Menu
+  //  *
+  //  * @param c
+  //  * @param b
+  //  * @param d
+  //  */
+  //   const toggleMenu = (c, b, d) => {
+  //     console.log(hamburgerMenuContent);
+  //     if (hamburgerMenuContent.classList.contains("active")) {
+  //       hamburgerMenuContent.classList.remove("active");
+  //     } else {
+  //       hamburgerMenuContent.classList.add("active");
+  //     }
+  //   };
+
   return (
     <>
       <Navbar />

@@ -1,9 +1,8 @@
-.container {
-  flex: 1 1 100%;
-}
 .site-footer {
   max-width: 1440px;
   margin: 0 auto;
   border-top: 1px solid white;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
