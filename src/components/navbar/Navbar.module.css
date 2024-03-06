@@ -39,7 +39,7 @@
 .search-icon {
   right: 0.3em;
   position: absolute;
-  color: black;
+  color: #20c05c;
   font-size: 1.3em;
 }
 .site-nav .main-nav {
@@ -135,12 +135,12 @@
   .hamburger-close span {
     height: 5px;
     width: 30px;
-    background-color: #bbb;
+    background-color: #20c05c;
   }
   .hamburger span {
     height: 5px;
     width: 30px;
-    background-color: #bbb;
+    background-color: #20c05c;
   }
 
   .site-nav .main-nav {
@@ -152,6 +152,7 @@
     transform: translateX(30px);
     transition: transform 1.3s ease;
     opacity: 10;
+    z-index: 99;
   }
 
   .site-nav .site-nav-title {

@@ -10,10 +10,16 @@ const Home = () => {
           <h3>Welcome!</h3>
           <h2>This is the best place to find your favourite recepie!</h2>
           <p>Let's start cooking right NOW!</p>
+          <a href="/about">About us</a>
         </div>
         <div
           className={`${styles["home-headline-img"]} ${styles["home-flex-item"]}`}
-        ></div>
+        >
+          <img
+            src="/images/homePageImages/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+            alt=""
+          />
+        </div>
       </section>
     </section>
   );
