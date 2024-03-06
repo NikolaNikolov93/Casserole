@@ -1,9 +1,17 @@
-.container {
-  background-image: url("/images/homePageImages/chinh-le-duc-vuDXJ60mJOA-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+.home-headline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  background-color: white;
 }
-.container h1 {
-  font-size: 3.5em;
+.home-flex-item {
+  flex-basis: calc((100% - 2em) / 2);
+  height: 50vh;
+}
+.home-headline-img {
+  background-image: url("/images/homePageImages/ella-olsson-KPDbRyFOTnE-unsplash.jpg"),
+    linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Use your image URL */
+  background-size: cover;
+  background-blend-mode: soft-light; /* Adjust blend mode as needed */
+  border-radius: 50%;
 }

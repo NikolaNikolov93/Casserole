@@ -10,6 +10,7 @@ import { GiKnifeFork } from "react-icons/gi";
 import { useState } from "react";
 
 const Navbar = () => {
+  // Navigation toggle state
   const [toggleNavBar, setToggleNavBar] = useState(false);
 
   return (
@@ -62,6 +63,12 @@ const Navbar = () => {
     </div>
   );
 };
+
+/**
+ *
+ * Custom Links for the navigation
+ */
+
 interface LinkProps {
   to: string;
   children: React.ReactNode;

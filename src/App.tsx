@@ -5,24 +5,12 @@ import Home from "./pages/home/Home";
 import Recepies from "./pages/recepies/Recepies";
 import About from "./pages/About";
 import Footer from "./components/footer/Footer";
+import Login from "./pages/login/Login";
 
 function App() {
-  // /**
-  //  * Toggle Menu
-  //  *
-  //  * @param c
-  //  * @param b
-  //  * @param d
-  //  */
-  //   const toggleMenu = (c, b, d) => {
-  //     console.log(hamburgerMenuContent);
-  //     if (hamburgerMenuContent.classList.contains("active")) {
-  //       hamburgerMenuContent.classList.remove("active");
-  //     } else {
-  //       hamburgerMenuContent.classList.add("active");
-  //     }
-  //   };
-
+  const handleLogin = (email: string, password: string) => {
+    console.log(`${email} and ${password}`);
+  };
   return (
     <>
       <Navbar />
@@ -31,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/recepies" element={<Recepies />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login onSubmit={handleLogin} />} />
         </Routes>
       </div>
       <Footer />
