@@ -7,8 +7,11 @@ import { GiCook } from "react-icons/gi";
 import { IoCreateOutline } from "react-icons/io5";
 import { CiLogout } from "react-icons/ci";
 import { GiKnifeFork } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [toggleNavBar, setToggleNavBar] = useState(false);
+
   return (
     <div className={styles["container"]}>
       <nav className={styles["site-nav"]}>
@@ -21,12 +24,21 @@ const Navbar = () => {
           <HiOutlineSearch className={styles["search-icon"]} />
         </div>
         <div className={styles["links-container"]}>
-          <div className={styles["hamburger"]}>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div
+            className={
+              toggleNavBar ? styles["hamburger-close"] : styles["hamburger"]
+            }
+            onClick={() => setToggleNavBar(!toggleNavBar)}
+          >
+            <span className={styles["top"]}></span>
+            <span className={styles["middle"]}></span>
+            <span className={styles["bot"]}></span>
           </div>
-          <ul>
+          <ul
+            className={
+              toggleNavBar ? styles["main-nav"] : styles["main-nav-closed"]
+            }
+          >
             <CustomLink to="/register">
               <IoCreateOutline className={styles["link-icon"]} /> Register
             </CustomLink>
