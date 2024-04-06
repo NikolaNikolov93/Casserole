@@ -1,6 +1,2 @@
 @import url("../styles/reset.css");
 @import url("../styles/typography.css");
-
-#root {
-  padding: 1.5em;
-}
